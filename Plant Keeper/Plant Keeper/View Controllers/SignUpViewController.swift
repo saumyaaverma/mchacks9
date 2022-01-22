@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SignUpViewController: UIViewController {
 
@@ -37,7 +39,57 @@ class SignUpViewController: UIViewController {
         Utilities.styleFilledButton(signUpButton)
     }
     
+    
+    //check the fields and vslidate that the data is correct
+    //if everything is correct return nil
+    //else return error message
+    func validateFields() -> String?{
+        //check all fields are filled in
+        if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            return "Please fill in all fields."
+        }
+        
+        //check if the password is secured
+        let cleanedPassword = passwordTextField.text!.trimmingCharacters(in:
+                .whitespacesAndNewlines)
+        
+        if Utilities.isPasswordValid(cleanedPassword) == false{
+            return "Please make sure password is at least 8 characters, contains special character and a number"
+        }
+        return nil
+    }
     @IBAction func signUpTapped(_ sender: Any) {
+        
+        //validate fields
+        let error = validateFields()
+        
+        if error != nil {
+            //there is something wrong with the fields, show error message
+            //potential error
+            showError(message: error!)
+        }
+        
+        else{
+            Auth.auth().createUser(withEmail: "", password: "") { result, err in
+                //create user
+                if err != nil {
+                    self.showError(message: "Error creating user")
+                }
+                else{
+                }
+            }
+            }
+        
+        //transition to the home screen
+    }
+    
+    
+    func showError(message:String){
+        errorLabel.text = message
+        errorLabel.alpha=1
     }
     
     

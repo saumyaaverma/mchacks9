@@ -8,5 +8,7 @@ target 'Plant Keeper' do
   # Pods for Plant Keeper
 	pod 'Firebase/Analytics'
 	pod 'Firebase/Auth'
+	pod 'Firebase/Core'
+	pod 'Firebase/Firestore'
 
 end

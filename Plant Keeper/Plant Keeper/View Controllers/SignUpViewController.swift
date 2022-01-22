@@ -1,3 +1,4 @@
+
 //
 //  SignUpViewController.swift
 //  Plant Keeper
@@ -24,6 +25,12 @@ class SignUpViewController: UIViewController {
         super.viewDidLoad()
         
         setUpElements()
+        let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
+
+                backgroundImage.image = UIImage(named: "back")
+                backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+                self.view.insertSubview(backgroundImage, at: 0)
+
 
         // Do any additional setup after loading the view.
     }

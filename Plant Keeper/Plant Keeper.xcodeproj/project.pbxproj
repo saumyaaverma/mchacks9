@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BE42021279C858A009BE4C5 /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7BE42020279C858A009BE4C5 /* back.jpg */; };
 		C85BE621279C6701009181DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE620279C6701009181DA /* Utilities.swift */; };
 		C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85BE623279C7433009181DA /* GoogleService-Info.plist */; };
 		C85BE626279C9481009181DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE625279C9481009181DA /* Constants.swift */; };
@@ -25,6 +26,7 @@
 /* Begin PBXFileReference section */
 		64A0AA95F9EFEAE6CA3D54A1 /* Pods-Plant Keeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Plant Keeper.debug.xcconfig"; path = "Target Support Files/Pods-Plant Keeper/Pods-Plant Keeper.debug.xcconfig"; sourceTree = "<group>"; };
 		716257BE151DBB8458CB6F7A /* Pods_Plant_Keeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plant_Keeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BE42020279C858A009BE4C5 /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = back.jpg; path = ../../../Downloads/back.jpg; sourceTree = "<group>"; };
 		C85BE620279C6701009181DA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C85BE623279C7433009181DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C85BE625279C9481009181DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 		C8D358D5279BB24B00752DE8 /* Plant Keeper */ = {
 			isa = PBXGroup;
 			children = (
+				7BE42020279C858A009BE4C5 /* back.jpg */,
 				C85BE622279C670E009181DA /* Helpers */,
 				C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */,
 				C8D358D6279BB24B00752DE8 /* AppDelegate.swift */,
@@ -187,6 +190,7 @@
 			files = (
 				C8D358E3279BB25000752DE8 /* LaunchScreen.storyboard in Resources */,
 				C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */,
+				7BE42021279C858A009BE4C5 /* back.jpg in Resources */,
 				C8D358E0279BB25000752DE8 /* Assets.xcassets in Resources */,
 				C8D358DE279BB24B00752DE8 /* Main.storyboard in Resources */,
 			);

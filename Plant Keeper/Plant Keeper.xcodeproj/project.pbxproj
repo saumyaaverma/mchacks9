@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C85BE621279C6701009181DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE620279C6701009181DA /* Utilities.swift */; };
 		C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85BE623279C7433009181DA /* GoogleService-Info.plist */; };
+		C85BE626279C9481009181DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE625279C9481009181DA /* Constants.swift */; };
 		C8D358D7279BB24B00752DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D6279BB24B00752DE8 /* AppDelegate.swift */; };
 		C8D358D9279BB24B00752DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */; };
 		C8D358DB279BB24B00752DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358DA279BB24B00752DE8 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		716257BE151DBB8458CB6F7A /* Pods_Plant_Keeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Plant_Keeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C85BE620279C6701009181DA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C85BE623279C7433009181DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C85BE625279C9481009181DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8D358D3279BB24B00752DE8 /* Plant Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D358D6279BB24B00752DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,7 +68,6 @@
 				64A0AA95F9EFEAE6CA3D54A1 /* Pods-Plant Keeper.debug.xcconfig */,
 				D160446EBDF57525D43051DD /* Pods-Plant Keeper.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -74,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				C85BE620279C6701009181DA /* Utilities.swift */,
+				C85BE625279C9481009181DA /* Constants.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -246,6 +248,7 @@
 				C8D358ED279BB2C900752DE8 /* LoginViewController.swift in Sources */,
 				C8D358D9279BB24B00752DE8 /* SceneDelegate.swift in Sources */,
 				C8D358EF279BB2E100752DE8 /* HomeViewController.swift in Sources */,
+				C85BE626279C9481009181DA /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

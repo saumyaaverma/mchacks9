@@ -62,6 +62,8 @@ class SignUpViewController: UIViewController {
         }
         return nil
     }
+    
+    
     @IBAction func signUpTapped(_ sender: Any) {
         
         //validate fields
@@ -96,8 +98,6 @@ class SignUpViewController: UIViewController {
                             self.showError(message: "Error saving user data")
                         }
                     }
-                    
-                    //Transition to home screen
                     
                 }
             }

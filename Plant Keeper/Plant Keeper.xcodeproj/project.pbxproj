@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C85BE621279C6701009181DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE620279C6701009181DA /* Utilities.swift */; };
+		C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85BE623279C7433009181DA /* GoogleService-Info.plist */; };
 		C8D358D7279BB24B00752DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D6279BB24B00752DE8 /* AppDelegate.swift */; };
 		C8D358D9279BB24B00752DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */; };
 		C8D358DB279BB24B00752DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358DA279BB24B00752DE8 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 
 /* Begin PBXFileReference section */
 		C85BE620279C6701009181DA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		C85BE623279C7433009181DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C8D358D3279BB24B00752DE8 /* Plant Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D358D6279BB24B00752DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				C8D358DC279BB24B00752DE8 /* Main.storyboard */,
 				C8D358DF279BB25000752DE8 /* Assets.xcassets */,
 				C8D358E1279BB25000752DE8 /* LaunchScreen.storyboard */,
+				C85BE623279C7433009181DA /* GoogleService-Info.plist */,
 				C8D358E4279BB25000752DE8 /* Info.plist */,
 			);
 			path = "Plant Keeper";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8D358E3279BB25000752DE8 /* LaunchScreen.storyboard in Resources */,
+				C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */,
 				C8D358E0279BB25000752DE8 /* Assets.xcassets in Resources */,
 				C8D358DE279BB24B00752DE8 /* Main.storyboard in Resources */,
 			);

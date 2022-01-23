@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         // Line height: 120 pt
 
 
-        view.text = "Plant\nKeeper."
+//        view.text = "Plant\nKeeper."
 
 
         var parent = self.view!

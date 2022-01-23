@@ -87,7 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Its-Kr-hUV">
-                                <rect key="frame" x="40" y="84" width="334" height="31"/>
+                                <rect key="frame" x="40" y="84" width="334" height="62"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-OI-fBw">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
@@ -98,17 +98,8 @@
                                             <segue destination="Gq3-Lj-cMM" kind="show" id="W2M-Ae-mIR"/>
                                         </connections>
                                     </button>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Fzi-Dc-0AY">
-                                <rect key="frame" x="25" y="189" width="334" height="31"/>
-                                <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Fn-8p-56D">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="31" id="ZqR-Ea-FyN"/>
-                                            <constraint firstAttribute="width" constant="334" id="rWf-Qf-8am"/>
-                                        </constraints>
+                                        <rect key="frame" x="0.0" y="31" width="334" height="31"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Find A Keeper"/>

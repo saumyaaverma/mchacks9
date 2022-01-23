@@ -60,17 +60,14 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                     let email = emails[val] as! String
                     let cost = costs[val] as! String
                     
-<<<<<<< HEAD
-                    let string = "back" + String(val)
-                    let formattedString = string.replacingOccurrences(of: " ", with: "")
+                    let numString = "\(val + 2)"
+                    let string = "back" + numString
                     
-                    self.data.append(Item(image: UIImage(named: formattedString)!, rating: nil, title: name,
-                                          subtitle: country + ", " + city + " " + postalCode, description: "Contact Information:  " + email))
-=======
-                    self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: name,
+                    
+                    self.data.append(Item(image: UIImage(named: string)!, rating: nil, title: name,
                                           subtitle: country + ", " + city + " " + postalCode, description: "Contact Information:  \n" + email + "\n \n" +
                                           "\nPrice per plant per day:  \n" + "$" + cost))
->>>>>>> 2c6fd76a57c6f499b660808c26f2b52ef809c838
+
                 }
 
                 

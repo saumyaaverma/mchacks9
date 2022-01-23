@@ -88,6 +88,11 @@ class SignUpViewController: UIViewController {
             let lastName = lastNameTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let country = ""
+            let city = ""
+            let postalCode = ""
+            let address = ""
+            let isAvailable = false
 
 
 
@@ -97,21 +102,20 @@ class SignUpViewController: UIViewController {
                     self.showError(message: "Error creating user")
                 }
                 else{
-                    
                     let db = Firestore.firestore()
-                    db.collection("users").addDocument(data: ["first_name" : firstName, "lastname" : lastName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["firstname" : firstName, "lastname" : lastName, "uid": result!.user.uid, "country": country,"city": city,"address": address,"postalCode":postalCode,"isAvailable": isAvailable]) { (error) in
                         if error != nil{
                             //show error message
                             self.showError(message: "Error saving user data")
+                        }
+                        else {
+                            self.transitionToHome()
                         }
                     }
                     
                 }
             }
         }
-        
-        //transition to the home screen
-        self.transitionToHome()
     }
     
     

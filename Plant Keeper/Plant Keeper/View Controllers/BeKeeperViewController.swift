@@ -18,8 +18,6 @@ class BeKeeperViewController: UIViewController {
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var addLabel: UILabel!
-    
-    @IBOutlet weak var emailTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpElements()
@@ -59,7 +57,6 @@ class BeKeeperViewController: UIViewController {
             let city = cityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let postalCode = postalCodeField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let address = addressTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let isAvailable = true
             let db = Firestore.firestore()
             let user = Auth.auth().currentUser
@@ -70,8 +67,7 @@ class BeKeeperViewController: UIViewController {
                             "city": city,
                             "postalCode": postalCode,
                             "address": address,
-                            "isAvailable": isAvailable,
-                            "email": email
+                            "isAvailable": isAvailable
                         ])
                 }
             showDone()
@@ -98,7 +94,6 @@ class BeKeeperViewController: UIViewController {
         if countryTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             cityTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             postalCodeField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             addressTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
             return "Please fill in all fields."
         }

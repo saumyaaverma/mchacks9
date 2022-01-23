@@ -322,7 +322,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LGz-mO-bGd">
-                                <rect key="frame" x="40" y="40" width="334" height="250"/>
+                                <rect key="frame" x="40" y="40" width="334" height="270.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACW-Bb-gwt">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -368,6 +368,12 @@
                                             <action selector="addButtonTapped:" destination="Gq3-Lj-cMM" eventType="touchUpInside" id="KrU-l0-oty"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUB-pQ-ccF">
+                                        <rect key="frame" x="0.0" y="250" width="334" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -382,6 +388,7 @@
                     <navigationItem key="navigationItem" id="6zx-lO-wFq"/>
                     <connections>
                         <outlet property="addButton" destination="OPc-jo-1fl" id="eqO-H1-bGy"/>
+                        <outlet property="addLabel" destination="sUB-pQ-ccF" id="wnW-O6-wNw"/>
                         <outlet property="addressTextField" destination="klO-jw-mPJ" id="3U3-ht-sPk"/>
                         <outlet property="cityTextField" destination="OVR-Ne-3kS" id="ymI-OO-ovf"/>
                         <outlet property="countryTextField" destination="ACW-Bb-gwt" id="NuM-sO-pIQ"/>

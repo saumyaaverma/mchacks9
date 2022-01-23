@@ -50,6 +50,7 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                 let cities = documents.map { $0["city"]! }
                 let postalCodes = documents.map { $0["postalCode"]! }
                 let emails = documents.map { $0["email"]! }
+                let costs = documents.map { $0["cost"]! }
                 
                 for (val, _) in firstnames.enumerated() {
                     let name = firstnames[val] as! String
@@ -57,15 +58,12 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                     let city = cities[val] as! String
                     let postalCode = postalCodes[val] as! String
                     let email = emails[val] as! String
+                    let cost = costs[val] as! String
                     
                     self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: name,
-                                          subtitle: country + ", " + city + " " + postalCode, description: "Contact Information:  " + email))
+                                          subtitle: country + ", " + city + " " + postalCode, description: "Contact Information:  \n" + email + "\n \n" +
+                                          "\nPrice per plant per day:  \n" + "$" + cost))
                 }
-                print("names: \(firstnames)")
-                print("names: \(countries)")
-                
-
-                
 
                 
 

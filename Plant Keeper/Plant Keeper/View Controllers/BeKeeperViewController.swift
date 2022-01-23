@@ -16,6 +16,7 @@ class BeKeeperViewController: UIViewController {
     @IBOutlet weak var cityTextField: UITextField!
     @IBOutlet weak var postalCodeField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var costTextField: UITextField!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var addLabel: UILabel!
     override func viewDidLoad() {
@@ -37,6 +38,7 @@ class BeKeeperViewController: UIViewController {
         Utilities.styleTextField(cityTextField)
         Utilities.styleTextField(postalCodeField)
         Utilities.styleTextField(addressTextField)
+        Utilities.styleTextField(costTextField)
         Utilities.styleFilledButton(addButton)
         addLabel.alpha = 0
 
@@ -57,6 +59,7 @@ class BeKeeperViewController: UIViewController {
             let city = cityTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let postalCode = postalCodeField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let address = addressTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let cost = costTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let isAvailable = true
             let db = Firestore.firestore()
             let user = Auth.auth().currentUser
@@ -67,6 +70,7 @@ class BeKeeperViewController: UIViewController {
                             "city": city,
                             "postalCode": postalCode,
                             "address": address,
+                            "cost":  cost,
                             "isAvailable": isAvailable
                         ])
                 }
@@ -94,7 +98,9 @@ class BeKeeperViewController: UIViewController {
         if countryTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             cityTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             postalCodeField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            addressTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" {
+            addressTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
+            costTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
+        {
             return "Please fill in all fields."
         }
         return nil

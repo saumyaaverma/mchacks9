@@ -25,7 +25,6 @@ class FindKeeperViewController: UIViewController {
                 print("names: \(cities)")
             }
 
-
     }
 
     

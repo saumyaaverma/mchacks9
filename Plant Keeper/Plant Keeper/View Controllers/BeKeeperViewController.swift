@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 import FirebaseFirestore
 
-class KeeperViewController: UIViewController {
+class BeKeeperViewController: UIViewController {
     
     @IBOutlet weak var countryTextField: UITextField!
     

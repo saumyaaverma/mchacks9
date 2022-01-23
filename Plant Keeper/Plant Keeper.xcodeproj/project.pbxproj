@@ -10,7 +10,8 @@
 		C85BE621279C6701009181DA /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE620279C6701009181DA /* Utilities.swift */; };
 		C85BE624279C7433009181DA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C85BE623279C7433009181DA /* GoogleService-Info.plist */; };
 		C85BE626279C9481009181DA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE625279C9481009181DA /* Constants.swift */; };
-		C85BE62A279CD1ED009181DA /* KeeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE629279CD1ED009181DA /* KeeperViewController.swift */; };
+		C85BE62A279CD1ED009181DA /* BeKeeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE629279CD1ED009181DA /* BeKeeperViewController.swift */; };
+		C85BE62C279CDE13009181DA /* FindKeeperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85BE62B279CDE13009181DA /* FindKeeperViewController.swift */; };
 		C8D358D7279BB24B00752DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D6279BB24B00752DE8 /* AppDelegate.swift */; };
 		C8D358D9279BB24B00752DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */; };
 		C8D358DB279BB24B00752DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D358DA279BB24B00752DE8 /* ViewController.swift */; };
@@ -29,7 +30,8 @@
 		C85BE620279C6701009181DA /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		C85BE623279C7433009181DA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C85BE625279C9481009181DA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		C85BE629279CD1ED009181DA /* KeeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeeperViewController.swift; sourceTree = "<group>"; };
+		C85BE629279CD1ED009181DA /* BeKeeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeKeeperViewController.swift; sourceTree = "<group>"; };
+		C85BE62B279CDE13009181DA /* FindKeeperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindKeeperViewController.swift; sourceTree = "<group>"; };
 		C8D358D3279BB24B00752DE8 /* Plant Keeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Plant Keeper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D358D6279BB24B00752DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C8D358D8279BB24B00752DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -123,7 +125,8 @@
 				C8D358DA279BB24B00752DE8 /* ViewController.swift */,
 				C8D358EA279BB2B500752DE8 /* SignUpViewController.swift */,
 				C8D358EC279BB2C900752DE8 /* LoginViewController.swift */,
-				C85BE629279CD1ED009181DA /* KeeperViewController.swift */,
+				C85BE629279CD1ED009181DA /* BeKeeperViewController.swift */,
+				C85BE62B279CDE13009181DA /* FindKeeperViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -247,12 +250,13 @@
 				C8D358DB279BB24B00752DE8 /* ViewController.swift in Sources */,
 				C8D358D7279BB24B00752DE8 /* AppDelegate.swift in Sources */,
 				C85BE621279C6701009181DA /* Utilities.swift in Sources */,
+				C85BE62C279CDE13009181DA /* FindKeeperViewController.swift in Sources */,
 				C8D358EB279BB2B600752DE8 /* SignUpViewController.swift in Sources */,
 				C8D358ED279BB2C900752DE8 /* LoginViewController.swift in Sources */,
 				C8D358D9279BB24B00752DE8 /* SceneDelegate.swift in Sources */,
 				C8D358EF279BB2E100752DE8 /* HomeViewController.swift in Sources */,
 				C85BE626279C9481009181DA /* Constants.swift in Sources */,
-				C85BE62A279CD1ED009181DA /* KeeperViewController.swift in Sources */,
+				C85BE62A279CD1ED009181DA /* BeKeeperViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

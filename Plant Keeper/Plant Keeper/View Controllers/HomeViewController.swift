@@ -58,7 +58,10 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                     let postalCode = postalCodes[val] as! String
                     let email = emails[val] as! String
                     
-                    self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: name,
+                    let string = "back" + String(val)
+                    let formattedString = string.replacingOccurrences(of: " ", with: "")
+                    
+                    self.data.append(Item(image: UIImage(named: formattedString)!, rating: nil, title: name,
                                           subtitle: country + ", " + city + " " + postalCode, description: "Contact Information:  " + email))
                 }
                 print("names: \(firstnames)")

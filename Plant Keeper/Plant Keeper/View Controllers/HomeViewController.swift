@@ -47,11 +47,17 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                 
                 let firstnames = documents.map { $0["firstname"]! }
                 let countries = documents.map { $0["country"]! }
-                let number = firstnames.count
-                for (val, element) in firstnames.enumerated() {
-                    let element = firstnames[val]
-                    let element1 = element as! String
-                    self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: element1, subtitle: "subtitle", description: "this is a description"))
+                let cities = documents.map { $0["city"]! }
+                let postalCodes = documents.map { $0["postalCode"]! }
+                
+                for (val, _) in firstnames.enumerated() {
+                    let name = firstnames[val] as! String
+                    let country = countries[val] as! String
+                    let city = cities[val] as! String
+                    let postalCode = postalCodes[val] as! String
+                    
+                    self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: name,
+                                          subtitle: country + ", " + city + " " + postalCode, description: "this is a description"))
                 }
                 print("names: \(firstnames)")
                 print("names: \(countries)")

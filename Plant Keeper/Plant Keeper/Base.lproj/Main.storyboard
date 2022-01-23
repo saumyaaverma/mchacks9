@@ -127,6 +127,7 @@
                             <constraint firstItem="Its-Kr-hUV" firstAttribute="top" secondItem="wis-Mh-7BJ" secondAttribute="top" constant="40" id="seR-m5-k2E"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="2f8-tP-CPN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1B-90-cyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -231,7 +232,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Ue1-t4-za8">
-                                <rect key="frame" x="40" y="84" width="334" height="370.5"/>
+                                <rect key="frame" x="40" y="144" width="334" height="370.5"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jVH-2C-MoW">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -287,11 +288,26 @@
                                     <constraint firstItem="icR-NR-BgK" firstAttribute="height" secondItem="jVH-2C-MoW" secondAttribute="height" id="Vv8-SX-Ly0"/>
                                 </constraints>
                             </stackView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sign Up" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f1q-oh-la8">
+                                <rect key="frame" x="146" y="68" width="122" height="40.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvt-LT-GM7">
+                                <rect key="frame" x="26" y="77" width="32" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="x">
+                                    <attributedString key="attributedSubtitle"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="k3r-x1-i5s"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Ue1-t4-za8" firstAttribute="top" secondItem="k3r-x1-i5s" secondAttribute="top" constant="40" id="abU-JX-p63"/>
+                            <constraint firstItem="Ue1-t4-za8" firstAttribute="top" secondItem="k3r-x1-i5s" secondAttribute="top" constant="100" id="Yii-Hs-0ev"/>
                             <constraint firstItem="k3r-x1-i5s" firstAttribute="trailing" secondItem="Ue1-t4-za8" secondAttribute="trailing" constant="40" id="dWZ-i1-eps"/>
                             <constraint firstItem="Ue1-t4-za8" firstAttribute="leading" secondItem="k3r-x1-i5s" secondAttribute="leading" constant="40" id="lIE-6U-pFF"/>
                         </constraints>
@@ -308,7 +324,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B9m-j6-uaL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1664" y="-203"/>
+            <point key="canvasLocation" x="1663.7681159420292" y="-203.57142857142856"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rko-R1-Wq4">

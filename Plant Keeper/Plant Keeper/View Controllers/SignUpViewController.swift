@@ -38,6 +38,8 @@ class SignUpViewController: UIViewController {
     func setUpElements() {
         //error label
         errorLabel.alpha = 0
+        //make password secure
+        passwordTextField.isSecureTextEntry = true
         
         //set up elements
         Utilities.styleTextField(firstNameTextField)

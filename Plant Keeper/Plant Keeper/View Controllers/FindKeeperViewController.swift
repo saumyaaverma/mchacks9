@@ -11,27 +11,26 @@ import FirebaseFirestore
 
 class FindKeeperViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let db = Firestore.firestore()
-        var ref = Firebase(url:MY_FIREBASE_URL)
-        ref.observeSingleEvent(of: .value) { snapshot in
-            for case let child as FIRDataSnapshot in snapshot.children {
-                guard let dict = child.value as? [String:Any] else {
-                    print("Error")
+        db.collection("users").whereField("isAvailable", isEqualTo: true)
+            .addSnapshotListener { querySnapshot, error in
+                guard let documents = querySnapshot?.documents else {
+                    print("Error fetching documents: \(error!)")
                     return
                 }
-                let country = dict["country"] as Any
-                let city = dict["city"] as Any
-                print(longtitude)
-                print(latitude)
+                let cities = documents.map { $0["firstname"]! }
+                print("names: \(cities)")
             }
-        }
 
-        
-        
-        // Do any additional setup after loading the view.
+
     }
+
+    
+    
+    
     
     
 

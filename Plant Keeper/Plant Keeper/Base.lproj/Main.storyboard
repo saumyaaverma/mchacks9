@@ -99,6 +99,7 @@
                                                 <fragment content="Become a Keeper">
                                                     <attributes>
                                                         <font key="NSFont" size="28" name="Didot"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -117,6 +118,7 @@
                                                 <fragment content="Find a Keeper">
                                                     <attributes>
                                                         <font key="NSFont" size="28" name="Didot"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>

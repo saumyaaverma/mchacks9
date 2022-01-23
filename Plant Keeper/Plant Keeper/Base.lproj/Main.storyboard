@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yoJ-l6-uHG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yoJ-l6-uHG">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -329,6 +329,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Done"/>
+                                        <connections>
+                                            <action selector="addButtonTapped:" destination="Gq3-Lj-cMM" eventType="touchUpInside" id="KrU-l0-oty"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -342,6 +345,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6zx-lO-wFq"/>
+                    <connections>
+                        <outlet property="addButton" destination="OPc-jo-1fl" id="eqO-H1-bGy"/>
+                        <outlet property="addressTextField" destination="klO-jw-mPJ" id="3U3-ht-sPk"/>
+                        <outlet property="cityTextField" destination="OVR-Ne-3kS" id="ymI-OO-ovf"/>
+                        <outlet property="countryTextField" destination="ACW-Bb-gwt" id="NuM-sO-pIQ"/>
+                        <outlet property="postalCodeField" destination="y1n-dl-xyw" id="o0Z-lH-CxE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tv-dd-JJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -28,7 +28,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
                                         <connections>
-                                            <segue destination="Nw4-st-BQ4" kind="show" id="u70-nW-deQ"/>
+                                            <segue destination="Nw4-st-BQ4" kind="show" id="EC6-Ma-RuT"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBQ-Zd-KMD">
@@ -78,12 +78,28 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Its-Kr-hUV">
+                                <rect key="frame" x="40" y="84" width="334" height="31"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SAh-OI-fBw">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Become a Keeper"/>
+                                        <connections>
+                                            <segue destination="Gq3-Lj-cMM" kind="show" id="W2M-Ae-mIR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wis-Mh-7BJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Its-Kr-hUV" firstAttribute="leading" secondItem="wis-Mh-7BJ" secondAttribute="leading" constant="40" id="Cya-sP-199"/>
                             <constraint firstItem="C3f-lp-hOK" firstAttribute="centerX" secondItem="lJ5-lB-1BM" secondAttribute="centerX" id="OTu-sP-H9T"/>
+                            <constraint firstItem="wis-Mh-7BJ" firstAttribute="trailing" secondItem="Its-Kr-hUV" secondAttribute="trailing" constant="40" id="cqG-dQ-098"/>
                             <constraint firstItem="C3f-lp-hOK" firstAttribute="centerY" secondItem="lJ5-lB-1BM" secondAttribute="centerY" id="ruw-fy-LRa"/>
+                            <constraint firstItem="Its-Kr-hUV" firstAttribute="top" secondItem="wis-Mh-7BJ" secondAttribute="top" constant="40" id="seR-m5-k2E"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -267,11 +283,11 @@
             <objects>
                 <viewController id="Gq3-Lj-cMM" customClass="KeeperViewController" customModule="Plant_Keeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xeD-1X-WfV">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LGz-mO-bGd">
-                                <rect key="frame" x="40" y="84" width="334" height="202"/>
+                                <rect key="frame" x="40" y="40" width="334" height="250"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ACW-Bb-gwt">
                                         <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
@@ -282,34 +298,39 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OVR-Ne-3kS">
-                                        <rect key="frame" x="0.0" y="50" width="334" height="34"/>
+                                        <rect key="frame" x="0.0" y="50" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="o14-X1-Czb"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Postal Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="y1n-dl-xyw">
-                                        <rect key="frame" x="0.0" y="84" width="334" height="34"/>
+                                        <rect key="frame" x="0.0" y="100" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cvD-Wo-5MZ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klO-jw-mPJ">
-                                        <rect key="frame" x="0.0" y="118" width="334" height="34"/>
+                                        <rect key="frame" x="0.0" y="150" width="334" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="U4h-C0-UhG"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-jo-1fl">
-                                        <rect key="frame" x="0.0" y="152" width="334" height="50"/>
+                                        <rect key="frame" x="0.0" y="200" width="334" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="UQO-9k-WTP"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="jTv-H2-XFN"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Done"/>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="ACW-Bb-gwt" firstAttribute="height" secondItem="y1n-dl-xyw" secondAttribute="height" multiplier="1.47059" id="QfG-QF-9yf"/>
-                                    <constraint firstItem="ACW-Bb-gwt" firstAttribute="height" secondItem="OVR-Ne-3kS" secondAttribute="height" multiplier="1.47059" id="VyH-Bq-gSd"/>
-                                    <constraint firstItem="ACW-Bb-gwt" firstAttribute="height" secondItem="klO-jw-mPJ" secondAttribute="height" multiplier="1.47059" id="XIK-su-ZmV"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="308-Vd-Qt8"/>
@@ -320,10 +341,11 @@
                             <constraint firstItem="LGz-mO-bGd" firstAttribute="top" secondItem="308-Vd-Qt8" secondAttribute="top" constant="40" id="uTV-Ar-oAi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6zx-lO-wFq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Tv-dd-JJl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1690" y="-889"/>
+            <point key="canvasLocation" x="3306" y="219"/>
         </scene>
     </scenes>
     <resources>

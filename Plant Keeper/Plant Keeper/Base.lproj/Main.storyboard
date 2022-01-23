@@ -110,7 +110,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Find A Keeper"/>
                                 <connections>
-                                    <segue destination="Lec-CB-oDX" kind="show" id="DrI-KF-Wml"/>
+                                    <action selector="findKeeperButtonTapped:" destination="Lqs-Wv-hWf" eventType="touchUpInside" id="AKb-hy-Wmx"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,6 +128,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2f8-tP-CPN"/>
+                    <connections>
+                        <outlet property="findKeeperButton" destination="5Fn-8p-56D" id="0Mh-UN-gBV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c1B-90-cyS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -138,7 +141,7 @@
             <objects>
                 <viewController id="Lec-CB-oDX" customClass="FindKeeperViewController" customModule="Plant_Keeper" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3rY-pE-syN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="hello" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2y1-Av-eps">
@@ -520,9 +523,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UlA-ZA-u7a"/>
+        <segue reference="EC6-Ma-RuT"/>
         <segue reference="YOT-MA-vHp"/>
-        <segue reference="m2T-cp-q53"/>
+        <segue reference="QxX-Le-Gzo"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">

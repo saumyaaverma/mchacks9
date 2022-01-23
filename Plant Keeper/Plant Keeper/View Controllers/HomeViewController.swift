@@ -23,13 +23,10 @@ class HomeViewController: UIViewController, CardSliderDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-
-                        backgroundImage.image = UIImage(named: "back2")
-                        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
-                        self.view.insertSubview(backgroundImage, at: 0)
-        data.append(Item(image: UIImage(named: "back")!, rating: nil, title: "Cathy", subtitle: "subtitle", description: "this is a description"))
-        data.append(Item(image: UIImage(named: "back")!, rating: nil, title: "Fred", subtitle: "subtitle", description: "this is a description"))
-        data.append(Item(image: UIImage(named: "back")!, rating: nil, title: "Jamey", subtitle: "subtitle", description: "this is a description"))
+        backgroundImage.image = UIImage(named: "back2")
+        backgroundImage.contentMode =  UIView.ContentMode.scaleAspectFill
+        self.view.insertSubview(backgroundImage, at: 0)
+        
 
         
 
@@ -47,8 +44,15 @@ class HomeViewController: UIViewController, CardSliderDataSource {
                     print("Error fetching documents: \(error!)")
                     return
                 }
+                
                 let firstnames = documents.map { $0["firstname"]! }
                 let countries = documents.map { $0["country"]! }
+                let number = firstnames.count
+                for (val, element) in firstnames.enumerated() {
+                    let element = firstnames[val]
+                    let element1 = element as! String
+                    self.data.append(Item(image: UIImage(named: "back")!, rating: nil, title: element1, subtitle: "subtitle", description: "this is a description"))
+                }
                 print("names: \(firstnames)")
                 print("names: \(countries)")
                 
